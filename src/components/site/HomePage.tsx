@@ -263,7 +263,7 @@ function About() {
             About Us
           </span>
           <h2 className="mt-4 font-display text-4xl font-extrabold md:text-5xl">
-            Where Every Child <span className="bg-blue-grad bg-clip-text text-transparent">Shines Bright</span>
+            Where Every Child <span className="text-blue-grad">Shines Bright</span>
           </h2>
           <p className="mt-4 text-muted-foreground md:text-lg">
             Sunshine Pre School & Academy is dedicated to nurturing young minds through joyful learning,
