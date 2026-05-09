@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Sunshine Pre-School & Acadamy" },
+      { name: "description", content: "Little Steps, Big Dreams!" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Sunshine Pre-School & Acadamy" },
+      { property: "og:description", content: "Little Steps, Big Dreams!" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Sunshine Pre-School & Acadamy" },
+      { name: "twitter:description", content: "Little Steps, Big Dreams!" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f2b0b497-13fa-4940-b6d1-d8ca52181f9e/id-preview-73301445--0e28480e-ec39-4974-9938-d9f1e41373b8.lovable.app-1778310387706.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f2b0b497-13fa-4940-b6d1-d8ca52181f9e/id-preview-73301445--0e28480e-ec39-4974-9938-d9f1e41373b8.lovable.app-1778310387706.png" },
     ],
     links: [
       {
