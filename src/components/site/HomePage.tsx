@@ -63,7 +63,7 @@ function Hero() {
           </motion.span>
           <h1 className="mt-6 font-display text-5xl font-extrabold leading-[1.05] text-foreground md:text-7xl">
             Little Steps,{" "}
-            <span className="bg-blue-grad bg-clip-text text-transparent">Big Dreams!</span>
+            <span className="text-blue-grad">Big Dreams!</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-muted-foreground md:text-xl">
             A joyful, safe and inspiring place where curious little minds learn, play and grow into confident shining stars. ✨
