@@ -25,8 +25,8 @@ const MAPS = "https://maps.app.goo.gl/vmUQQEntJKRps96o6";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-};
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } },
+} as const;
 
 function SectionHeading({ kicker, title, sub }: { kicker?: string; title: string; sub?: string }) {
   return (
