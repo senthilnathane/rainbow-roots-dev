@@ -15,7 +15,7 @@ import classroom1 from "@/assets/classroom-1.jpg";
 import classroom2 from "@/assets/classroom-2.jpg";
 import classroom3 from "@/assets/classroom-3.jpg";
 import playCars from "@/assets/play-cars.jpg";
-
+ 
 const PHONE_1 = "7373256444";
 const PHONE_2 = "7871715444";
 const EMAIL = "Sunshinepreschool26@gmail.com";
