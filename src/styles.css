@@ -88,6 +88,20 @@
   .bg-sky-grad { background: var(--gradient-sky); }
   .bg-sunshine { background: var(--gradient-sunshine); }
   .bg-blue-grad { background: var(--gradient-blue); }
+  .text-blue-grad {
+    background-image: var(--gradient-blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-sunshine-grad {
+    background-image: var(--gradient-sunshine);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
   .shadow-soft { box-shadow: var(--shadow-soft); }
   .shadow-pop { box-shadow: var(--shadow-pop); }
   .shadow-yellow { box-shadow: var(--shadow-yellow); }
