@@ -63,7 +63,7 @@ function Hero() {
           </motion.span>
           <h1 className="mt-6 font-display text-5xl font-extrabold leading-[1.05] text-foreground md:text-7xl">
             Little Steps,{" "}
-            <span className="bg-blue-grad bg-clip-text text-transparent">Big Dreams!</span>
+            <span className="text-blue-grad">Big Dreams!</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-muted-foreground md:text-xl">
             A joyful, safe and inspiring place where curious little minds learn, play and grow into confident shining stars. ✨
@@ -112,30 +112,6 @@ function Hero() {
               animate={{ y: [0, -12, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             />
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-              className="absolute -right-2 -top-2 grid h-20 w-20 place-items-center rounded-full bg-secondary text-secondary-foreground shadow-yellow md:h-24 md:w-24"
-            >
-              <div className="text-center font-fun text-[10px] font-bold leading-tight md:text-xs">
-                NEW<br/>BATCH<br/>★★★
-              </div>
-            </motion.div>
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 3, repeat: Infinity }}
-              className="absolute -left-4 bottom-4 rounded-2xl bg-white px-4 py-3 shadow-pop"
-            >
-              <div className="flex items-center gap-2">
-                <div className="grid h-10 w-10 place-items-center rounded-full bg-mint">
-                  <Smile className="h-5 w-5 text-emerald-700" />
-                </div>
-                <div>
-                  <div className="font-fun text-sm font-bold">500+ Happy Kids</div>
-                  <div className="flex text-yellow-500">{[...Array(5)].map((_,i)=><Star key={i} className="h-3 w-3 fill-current" />)}</div>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </motion.div>
       </div>
@@ -287,7 +263,7 @@ function About() {
             About Us
           </span>
           <h2 className="mt-4 font-display text-4xl font-extrabold md:text-5xl">
-            Where Every Child <span className="bg-blue-grad bg-clip-text text-transparent">Shines Bright</span>
+            Where Every Child <span className="text-blue-grad">Shines Bright</span>
           </h2>
           <p className="mt-4 text-muted-foreground md:text-lg">
             Sunshine Pre School & Academy is dedicated to nurturing young minds through joyful learning,
@@ -428,8 +404,11 @@ function Admissions() {
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hi Sunshine Pre School,%0A%0AStudent: ${form.student}%0AParent: ${form.parent}%0AAge: ${form.age}%0AProgram: ${form.program}%0APhone: ${form.phone}%0AMessage: ${form.message}`;
-    window.open(`https://wa.me/91${PHONE_1}?text=${text}`, "_blank");
+    const subject = encodeURIComponent(`Admission Enquiry — ${form.student || "New Student"} (${form.program})`);
+    const body = encodeURIComponent(
+      `Hi Sunshine Pre School,\n\nI'd like to enquire about admissions.\n\nStudent Name: ${form.student}\nParent Name: ${form.parent}\nChild's Age: ${form.age}\nProgram: ${form.program}\nPhone: ${form.phone}\n\nMessage:\n${form.message}\n\nThank you!`
+    );
+    window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
     setSent(true);
   };
 
@@ -464,7 +443,7 @@ function Admissions() {
           className="rounded-[2rem] bg-white p-6 shadow-pop md:p-8"
         >
           <h3 className="font-display text-2xl font-bold">Enquiry Form</h3>
-          <p className="text-sm text-muted-foreground">We'll reach out to you on WhatsApp.</p>
+          <p className="text-sm text-muted-foreground">Submitting will open your email app to send us your enquiry.</p>
           <div className="mt-5 grid gap-4 sm:grid-cols-2">
             <Input label="Student Name" value={form.student} onChange={(v)=>setForm({...form,student:v})} required />
             <Input label="Parent Name" value={form.parent} onChange={(v)=>setForm({...form,parent:v})} required />
