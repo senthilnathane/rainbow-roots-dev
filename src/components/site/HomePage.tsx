@@ -404,8 +404,11 @@ function Admissions() {
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hi Sunshine Pre School,%0A%0AStudent: ${form.student}%0AParent: ${form.parent}%0AAge: ${form.age}%0AProgram: ${form.program}%0APhone: ${form.phone}%0AMessage: ${form.message}`;
-    window.open(`https://wa.me/91${PHONE_1}?text=${text}`, "_blank");
+    const subject = encodeURIComponent(`Admission Enquiry — ${form.student || "New Student"} (${form.program})`);
+    const body = encodeURIComponent(
+      `Hi Sunshine Pre School,\n\nI'd like to enquire about admissions.\n\nStudent Name: ${form.student}\nParent Name: ${form.parent}\nChild's Age: ${form.age}\nProgram: ${form.program}\nPhone: ${form.phone}\n\nMessage:\n${form.message}\n\nThank you!`
+    );
+    window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
     setSent(true);
   };
 
