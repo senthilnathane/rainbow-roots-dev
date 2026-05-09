@@ -112,36 +112,32 @@ function Hero() {
               animate={{ y: [0, -12, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             />
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-              className="absolute -right-2 -top-2 grid h-20 w-20 place-items-center rounded-full bg-secondary text-secondary-foreground shadow-yellow md:h-24 md:w-24"
-            >
-              <div className="text-center font-fun text-[10px] font-bold leading-tight md:text-xs">
-                NEW<br/>BATCH<br/>★★★
-              </div>
-            </motion.div>
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 3, repeat: Infinity }}
-              className="absolute -left-4 bottom-4 rounded-2xl bg-white px-4 py-3 shadow-pop"
-            >
-              <div className="flex items-center gap-2">
-                <div className="grid h-10 w-10 place-items-center rounded-full bg-mint">
-                  <Smile className="h-5 w-5 text-emerald-700" />
-                </div>
-                <div>
-                  <div className="font-fun text-sm font-bold">500+ Happy Kids</div>
-                  <div className="flex text-yellow-500">{[...Array(5)].map((_,i)=><Star key={i} className="h-3 w-3 fill-current" />)}</div>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </motion.div>
       </div>
     </section>
   );
 }
+// (decorative badges removed per request)
+const _removed = () => null;
+const _removed2 = () => null;
+const _removed3 = () => null;
+const _removed4 = () => null;
+const _removed5 = () => null;
+const _removed6 = () => null;
+const _removed7 = () => null;
+const _removed8 = () => null;
+const _removed9 = () => null;
+const _removed10 = () => null;
+const _removed11 = () => null;
+const _removed12 = () => null;
+const _removed13 = () => null;
+const _removed14 = () => null;
+const _removed15 = () => null;
+const _removed16 = () => null;
+const _removed17 = () => null;
+const _removed18 = () => null;
+const _removed19 = () => null;
 
 /* ---------- PROGRAMS ---------- */
 const programs = [
