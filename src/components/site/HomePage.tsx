@@ -118,26 +118,6 @@ function Hero() {
     </section>
   );
 }
-// (decorative badges removed per request)
-const _removed = () => null;
-const _removed2 = () => null;
-const _removed3 = () => null;
-const _removed4 = () => null;
-const _removed5 = () => null;
-const _removed6 = () => null;
-const _removed7 = () => null;
-const _removed8 = () => null;
-const _removed9 = () => null;
-const _removed10 = () => null;
-const _removed11 = () => null;
-const _removed12 = () => null;
-const _removed13 = () => null;
-const _removed14 = () => null;
-const _removed15 = () => null;
-const _removed16 = () => null;
-const _removed17 = () => null;
-const _removed18 = () => null;
-const _removed19 = () => null;
 
 /* ---------- PROGRAMS ---------- */
 const programs = [
